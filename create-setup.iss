@@ -2,7 +2,11 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 ; Update version number after update to application and before packaging in setup
+<<<<<<< HEAD
 #define MyAppVersion "1.3.4"
+=======
+#define MyAppVersion "1.3.2"
+>>>>>>> 80afa8df19657cb2f91374dfad95d2a8cd4e4367
 #define MyAppName "CAS pdf-report maker " + MyAppVersion
 
 #define MyAppPublisher "Acropolis FCA department"
@@ -22,7 +26,7 @@ InfoAfterFile=.\CREDITS.TXT
 ; Uncomment the following line to run in non administrative install mode (install for current user only.)
 ;PrivilegesRequired=lowest
 PrivilegesRequiredOverridesAllowed=dialog
-OutputBaseFilename=report-maker-setup
+OutputBaseFilename=report-maker-setup-v{#MyAppVersion}
 SetupIconFile=.\images\icons8-project-setup-70.ico
 Compression=lzma
 SolidCompression=yes
