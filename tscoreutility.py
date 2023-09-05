@@ -50,6 +50,8 @@ def Parse_Excel_To_List(path):
 
     for i in range(1,Total_rows+1):         #Sheet data --->Data(It is 2d list)
         temp = []
+        if Sheet.cell(i,1).value is None:
+                continue
         for j in range(1,Total_clms+1):
             temp.append(str(Sheet.cell(i,j).value))
         RawData.append(temp)
